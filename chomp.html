@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chomp</title>
+    <meta charset="UTF-8" />
+    <link href="chomp.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="chomp.js"></script>
+  </head>
+  <body>
+    <h1>Chomp</h1>
+    <p>Don't take the last square.</p>
+    <div>
+      <fieldset>
+        <legend>Choose AI</legend>
+        <select id="ai">
+          <option value="perfect">Perfect</option>
+          <option value="strong">Strong</option>
+          <option value="weak">Weak</option>
+          <option value="random">Random</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Choose Size</legend>
+        <label>X: <input type="text" id="x" maxlength="2" size="2"/></label>
+        <label>Y: <input type="text" id="y" maxlength="2" size="2"/></label>
+      </fieldset>
+      <fieldset>
+        <legend>Game Controls</legend>
+        <button id="new">New Game</button>
+        <button id="undo" disabled>Undo</button>
+      </fieldset>
+    </div>
+    <div id="squares">
+    </div>
+  </body>
+</html>
